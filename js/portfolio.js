@@ -8,7 +8,7 @@ function displayPictureCard(picture) {
     // Get the card element using its cardNum
     var card = document.getElementsByClassName('card')[picture.cardNumber];
 
-    card.innerHTML += '<img src="../diegos_content/images/' + picture.imageName + '">';
+    card.innerHTML += '<img src="../diegos_content2/images/' + picture.imageName + '">';
     card.innerHTML += '<h3>' + picture.picName + '</h3><hr />'; // Use picture.picName
 }
 
