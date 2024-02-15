@@ -45,7 +45,7 @@ img {
   /* Zoom effect for cards on hover */
   .zoom {
     padding: 50px;
-    background-color:antiquewhite
+    background-color:antiquewhite;
     transition: transform .2s; /* Animation duration for zoom effect */
     margin: 0 auto; /* Center the zoom element horizontally */
   }
