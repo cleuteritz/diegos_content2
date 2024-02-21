@@ -1,0 +1,46 @@
+#logo {
+    max-width: 100%; /* Set the maximum width to 100% */
+    height: auto;    /* Let the height adjust automatically */
+    /* Additional styles if needed */
+}
+
+.header {
+    overflow: hidden;
+    background-color: #698796;
+    padding: 5px ;
+  }
+  
+  .header a{
+    height: 40px;
+    float: left;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px ;
+    text-decoration: none;
+    padding: 12px ;
+  
+  } 
+  
+  
+  .header a:hover{
+    color: 	#d1e6e7;
+  }
+  
+  .header a.active {
+    color: 	#698796;
+    background-color: #f8f8f8;
+  }
+  
+  .header-right{
+    float: right;
+    margin: 12px;
+  }
+  
+.column {
+    float: left;
+    width: 75%;
+    padding: 10px;
+  }
+
+
+  
