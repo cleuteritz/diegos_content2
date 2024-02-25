@@ -1,44 +1,41 @@
 // Event Handling
-var fullName = document.getElementById("fullName");
-var feedbackMsg = document.getElementById("feedback");
+var fullName = $("#fullName");
+var feedbackMsg = $("#feedback");
 
 function checkName() {
-	if (fullName.value === '') {
-		feedbackMsg.innerHTML = "You did not enter a name. Please try again.";
-		fullName.style.borderColor = "red";
-	} else if (fullName.value.split(' ').length < 2) {
-		feedbackMsg.innerHTML = "You did not enter your full name (First and Last). Please try again.";
-		fullName.style.borderColor = "red";
+	if (fullName.val() === '') {
+		feedbackMsg.html("You did not enter a name. Please try again.");
+		fullName.css("border-color", "red");
+	} else if (fullName.val().split(' ').length < 2) {
+		feedbackMsg.html("You did not enter your full name (First and Last). Please try again.");
+		fullName.css("border-color", "red");
 	} else {
-		feedbackMsg.innerHTML = "";
-		fullName.style.borderColor = "#ccc";
+		feedbackMsg.html("");
+		fullName.css("border-color", "#ccc");
 		validName = true;
 	}
 }
 
-fullName.addEventListener('focus', function () {
-	feedbackMsg.innerHTML = "Please enter your full name (First and Last)";
-}, false);
+fullName.on('focus', function () {
+	feedbackMsg.html("Please enter your full name (First and Last)");
+});
 
-fullName.addEventListener('blur', checkName, false);
+fullName.on('blur', checkName);
 
 // Looping Through A Nodelist
-var nodeList = document.querySelectorAll(".element-class");
+var nodeList = $(".element-class");
 
 if (nodeList.length > 0) {
-	for (var i = 0; i < nodeList.length; i++) {
+	nodeList.each(function () {
 		// Code to apply to each element in the nodeList
-		nodeList[i].style.color = "blue";
-	}
+		$(this).css("color", "blue");
+	});
 }
 
 // DOM Manipulation
-var newElement = document.createElement("div");
-var newText = document.createTextNode("New content");
+var newElement = $("<div></div>").text("New content");
 
-newElement.appendChild(newText);
+var parentElement = $("#parentElement");
+var referenceElement = $("#referenceElement");
 
-var parentElement = document.getElementById("parentElement");
-var referenceElement = document.getElementById("referenceElement");
-
-parentElement.insertBefore(newElement, referenceElement);
+newElement.insertBefore(referenceElement);

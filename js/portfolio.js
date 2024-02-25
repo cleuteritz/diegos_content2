@@ -6,10 +6,10 @@ function Picture(cardNumber, imageName, picName) {
 
 function displayPictureCard(picture) {
     // Get the card element using its cardNum
-    var card = document.getElementsByClassName('card')[picture.cardNumber];
+    var card = $('.card').eq(picture.cardNumber);
 
-    card.innerHTML += '<img src="../diegos_content2/images/' + picture.imageName + '">';
-    card.innerHTML += '<h3>' + picture.picName + '</h3><hr />'; // Use picture.picName
+    card.append('<img src="../diegos_content2/images/' + picture.imageName + '">');
+    card.append('<h3>' + picture.picName + '</h3><hr />'); // Use picture.picName
 }
 
 var pic1 = new Picture(0, 'IMG_7333.jpg', '21st Birthday');
@@ -22,4 +22,3 @@ var pictures = [pic1, pic2, pic3, pic5];
 pictures.forEach(function (picture) {
     displayPictureCard(picture);
 });
-
