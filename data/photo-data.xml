@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testimonials>
+    <testimonial>
+        <id>1</id>
+        <name>John Doe</name>
+        <company>ABC Corp</company>
+        <content>Great service and highly recommend!</content>
+        <image>john_doe.jpg</image>
+    </testimonial>
+    <testimonial>
+        <id>2</id>
+        <name>Jane Smith</name>
+        <company>XYZ Ltd</company>
+        <content>Exceptional work, exceeded my expectations.</content>
+        <image>jane_smith.jpg</image>
+    </testimonial>
+    <testimonial>
+        <id>3</id>
+        <name>Bob Johnson</name>
+        <company>123 Industries</company>
+        <content>Professional and efficient. Will work with them again.</content>
+        <image>bob_johnson.jpg</image>
+    </testimonial>
+    <!-- Add more testimonials as needed -->
+</testimonials>

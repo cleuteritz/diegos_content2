@@ -12,12 +12,12 @@ function displayPictureCard(picture) {
     card.append('<h3>' + picture.picName + '</h3><hr />'); // Use picture.picName
 }
 
-var pic1 = new Picture(0, 'IMG_7333.jpg', '21st Birthday');
-var pic2 = new Picture(1, 'pic2.jpg', 'Some Name');
-var pic3 = new Picture(2, 'pic3.jpg', 'Another Name');
-var pic5 = new Picture(3, 'pic4.jpg', 'Yet Another Name');
+var pic1 = new Picture(0, 'alfred.jpg', 'Alfred Grad Pic');
+var pic2 = new Picture(1, 'ram.jpg', 'Rhody Ram');
+var pic3 = new Picture(2, 'liv.jpg', '21st Birthday Pic');
+var pic4 = new Picture(3, 'ri_soccer_team.jpg', 'URI Mens Soccer Team Pic');
 
-var pictures = [pic1, pic2, pic3, pic5];
+var pictures = [pic1, pic2, pic3, pic4];
 
 pictures.forEach(function (picture) {
     displayPictureCard(picture);
